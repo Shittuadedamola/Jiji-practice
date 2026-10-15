@@ -11,7 +11,7 @@
     <title>Jiji</title>
 </head>
 <body>
-    <section class="h-[200px] bg-green-500">
+    <section class="bg-green-500 pb-5">
         <nav class="h-[50px] bg-green-500 shadow-[0_3px_4px_0_rgba(0,0,0,0.2)] flex items-center justify-between px-5">
             <div class="text-white font-bold text-3xl">
                 <span>Jiji</span>
@@ -22,12 +22,39 @@
                     <h1>EN</h1>
                 </div>
                 <div>
-                    <i class="fa-solid fa-user text-xl text-white"></i>
+                    <i class="fa-regular fa-circle-user text-xl text-white"></i>
                 </div>
             </div>
         </nav>
-        <div>
-            <h1 class="text-white font-bold mt-15">What are you looking for?</h1>
+        <div class="text-sm">
+            <h1 class="text-white font-bold mt-15 flex flex-col items-center">What are you looking for?</h1>
+
+            <div class="flex mx-5 mt-5">
+                <div class="bg-white text-gray-400 rounded-lg p-3 whitespace-nowrap mr-3">
+                    <span>All Nigeria</span>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+                
+                <div class="relative w-full flex items-center">
+                    <input
+                        type="search"
+                        placeholder="I am looking for..."
+                        class="w-full rounded-lg border border-gray-300
+                            py-3 pl-4 pr-12 outline-none
+                            focus:border-green-600 focus:ring-1
+                            focus:ring-green-600 bg-white"
+                    />
+
+                    <button
+                        type="submit"
+                        aria-label="Search"
+                        class="absolute right-3 top-1/2
+                            -translate-y-1/2 hover:text-green-600"
+                    >
+                        <i class="fa-solid fa-magnifying-glass text-emerald-700"></i>
+                    </button>
+                </div>
+            </div>
         </div>
     </section>
 </body>
