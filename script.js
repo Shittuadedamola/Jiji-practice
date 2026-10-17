@@ -42,4 +42,4 @@ const jiji = async () => {
     }
 };
 
-// jiji();
+jiji();

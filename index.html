@@ -13,7 +13,7 @@
 </head>
 <body>
     <section class="bg-green-500 pb-5 rounded-b-2xl mb-2">
-        <nav class="h-[50px] bg-green-500 shadow-[0_3px_4px_0_rgba(0,0,0,0.2)] flex items-center justify-between px-5">
+        <nav id="navbar" class="h-[50px] bg-green-500 shadow-[0_3px_4px_0_rgba(0,0,0,0.2)] flex items-center justify-between px-5 sticky top-0 z-10">
             <div class="text-white font-bold text-3xl cursor-pointer">
                 <span>Jiji</span>
             </div>
@@ -30,7 +30,7 @@
         <div class="text-sm">
             <h1 class="text-white font-bold mt-15 flex flex-col items-center">What are you looking for?</h1>
 
-            <div class="flex mx-5 mt-5">
+            <div id="searchContainer" class="flex mx-5 mt-5">
                 <div class="bg-white text-gray-400 rounded-lg p-3 whitespace-nowrap mr-3 cursor-pointer">
                     <span>All Nigeria</span>
                     <i class="fa-solid fa-caret-down"></i>
@@ -210,7 +210,7 @@
             </div>
         </div>
 
-        <main id="products" class="grid grid-cols-2 gap-5">
+        <main id="products" class="grid grid-cols-2 gap-5 lg:grid-cols-4">
             <!-- the products are displayed here -->
         </main>
     </section>
