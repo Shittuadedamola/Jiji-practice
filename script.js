@@ -11,13 +11,13 @@ const jiji = async () => {
 
         products.innerHTML = datas.map((data) => {
             return `
-                <div class="bg-white rounded-2xl shadow-sm overflow-hidden group">
+                <div class="bg-white rounded-2xl shadow-sm overflow-hidden group cursor-pointer">
                     <div class="relative mb-3">
                         <div class="absolute flex items-center gap-2
                                     text-blue-600 bg-blue-200 p-3
                                     rounded-full top-3 right-3">
-                            <i class="fa-solid fa-user-check"></i>
-                            <span>Verified ID</span>
+                            <i class="fa-solid fa-user-check text-[10px]"></i>
+                            <span class="text-[10px]">Verified ID</span>
                         </div>
 
                         <img
@@ -42,4 +42,4 @@ const jiji = async () => {
     }
 };
 
-jiji();
+// jiji();
