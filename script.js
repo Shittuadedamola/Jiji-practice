@@ -7,9 +7,10 @@ const jiji = async () => {
         const response = await fetch(apiUrl)
         datas = await response.json();
 
-        const products = document.getElementById("products");
+        const mobileProducts = document.getElementById("mobileProducts");
+        const desktopProducts = document.getElementById("desktopProducts");
 
-        products.innerHTML = datas.map((data) => {
+        const productHTML = datas.map((data) => {
             return `
                 <div class="bg-white rounded-2xl shadow-sm overflow-hidden group cursor-pointer">
                     <div class="relative mb-3">
@@ -37,6 +38,8 @@ const jiji = async () => {
                 </div>
             `;
         }).join("");
+        mobileProducts.innerHTML = productHTML
+        desktopProducts.innerHTML = productHTML
     } catch (error) {
         console.log(error.message)
     }
