@@ -9,3 +9,13 @@ This project is a clone of the Jiji.ng website, built to improve my frontend dev
 The project focuses on the website's layout, navigation, search interface, product listings, and responsive design across different screen sizes.
 
 Note: This is an educational project created for practice purposes. It is not affiliated with or endorsed by Jiji.ng.
+
+TECHNOLOGIES USED
+
+HTML5
+
+Tailwind CSS
+
+JavaScript
+
+Font Awesome
