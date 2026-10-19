@@ -19,3 +19,9 @@ Tailwind CSS
 JavaScript
 
 Font Awesome
+
+AUTHOR
+
+Shittu Adedamola
+
+GitHub: @Shittuadedamola
